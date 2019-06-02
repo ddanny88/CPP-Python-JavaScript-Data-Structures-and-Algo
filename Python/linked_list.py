@@ -96,6 +96,21 @@ class List:
         prev.next = temp
         self.length -=1
         return target
+    
+    def reverse(self):
+        if not self.head: return None
+        node = self.head
+        self.head = self.tail
+        self.tail = node
+        prev = None
+        next_node = None
+        i = 0
+        while i < self.length:
+            next_node = node.next
+            node.next = prev
+            prev = node
+            node = next_node
+        return self
         
 
     

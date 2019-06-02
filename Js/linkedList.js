@@ -110,4 +110,20 @@ class List {
         this.length --;
         return target;
     }
+
+    reverse() {
+        if (!this.head) return undefined;
+        let node = this.head;
+        this.head = this.tail;
+        this.tial = node;
+        let prev = null;
+        let next;
+        for (let i = 0; i < this.length; i++) {
+            next = node.next;
+            node.next = prev;
+            prev = node;
+            node = next;
+        }
+        return this;
+    }
 }
