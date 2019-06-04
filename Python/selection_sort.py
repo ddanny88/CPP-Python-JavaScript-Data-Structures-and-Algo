@@ -12,5 +12,3 @@ def selection_sort(arr):
         arr[i] = arr[low]
         arr[low] = temp
     return arr
-
-print(selection_sort(data))

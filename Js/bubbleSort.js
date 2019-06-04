@@ -1,6 +1,6 @@
 // Binary Sorting algorithm written in JavaScript
 
-function binarySort(arr) {
+function bubbleSort(arr) {
     let temp;
     for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < arr.length - i; j++) {
