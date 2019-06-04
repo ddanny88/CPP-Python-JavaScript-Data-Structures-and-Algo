@@ -1,6 +1,6 @@
 # Binary Sorting algorithm written in Python.
 
-def binary_sort(items):
+def bubble_sort(items):
     temp = None
     for i in range(1, len(items)):
         for j in range(0, len(items) - i):
