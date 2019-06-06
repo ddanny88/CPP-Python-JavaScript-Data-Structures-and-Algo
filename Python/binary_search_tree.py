@@ -46,3 +46,4 @@ class Binary_search_tree:
                 return current
         if not found:
             return False
+        return current
